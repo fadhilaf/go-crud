@@ -227,21 +227,3 @@ func deleteNotes(db *sql.DB, id int) error {
 
 	return nil
 }
-
-// binding & validasi
-// func bindNoteRequest(c *gin.Context) (Note, error) {
-// 	var note Note
-// 	if os.Getenv("REQUEST_TYPE") == "JSON" {
-// 		if err := c.ShouldBindWith(&note, binding.JSON); err != nil {
-// 			return note, err
-// 		}
-
-// 	} else if os.Getenv("REQUEST_TYPE") == "FORM" {
-// 		if err := c.ShouldBindWith(&note, binding.Form); err != nil {
-// 			return note, err
-// 		}
-
-// 	}
-
-// 	return note, nil
-// }
